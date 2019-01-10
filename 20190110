@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	int i;
+	struct student
+	{
+		char name[10];
+		int student;
+		int prog;
+	};
+	struct student S[2];
+	
+	strcpy(S[0].name,"trump");
+    S[0].student=18080001;
+	S[0].prog=79;
+	strcpy(S[1].name,"obama");
+    S[1].student=18080002;
+	S[1].prog=78;
+	
+	for(i=0;i<=1;i++)
+	{
+		printf("學號%d的%s同學程式設計成績是%d\n",S[i].student,S[i].name,S[i].prog);
+		
+	}
+	
+	
+
+	
+}
